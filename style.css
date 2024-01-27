@@ -1,0 +1,117 @@
+body {
+  background: #262a2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+  width: 300px;
+  padding: 25px 35px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.container p {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.container input {
+  width: 92%;
+  height: 25px;
+  border: 1px solid #494eea;
+  outline: 0;
+  padding: 10px;
+  margin: 10px 0px 20px;
+  border-radius: 5px;
+}
+
+#Generator {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background-color: #494eea;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  margin: 3px 0px;
+  cursor: pointer;
+  font-weight: 600px;
+}
+#refreshqr {
+  width: 100%;
+  height: 50px;
+  color: black;
+  background-color: #eda14a;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  margin: 3px 0px;
+  cursor: pointer;
+  font-weight: 600px;
+}
+#Download {
+  width: 100%;
+  height: 50px;
+  color: black;
+  background-color: #4a9bed;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  margin: 3px 0px;
+  cursor: pointer;
+  font-weight: 600px;
+}
+
+#imgBox {
+  width: 200px;
+  border-radius: 5px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+#imgBox img {
+  width: 90%;
+  padding: 10px;
+}
+
+#imgBox.show {
+  max-height: 300px;
+  margin: 10px auto;
+  border: 1px solid #d1d1d1;
+}
+
+.error {
+  animation: shake 0.1s linear 5;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+    border: 1px solid red;
+  }
+  25% {
+    transform: translateX(-2px);
+    border: 1px solid red;
+  }
+  50% {
+    transform: translateX(0);
+    border: 1px solid red;
+  }
+  75% {
+    transform: translateX(2px);
+    border: 1px solid red;
+  }
+  100% {
+    transform: translateX(0px);
+    border: 1px solid red;
+  }
+}
